@@ -17,9 +17,20 @@ Then install iconerator via npm with:
 
 ##Usage
 ------------
+`$ iconerator.js [options] <img file ...> <output path ...>`
 
 
+  
+####Options:
 
+    -h, --help      output usage information
+    -V, --version   output the version number
+    --only-ios      Only generate iOS icons
+    --only-android  Only generate Android icons
+    --only-iphone   Only generate iPhone icons
+    --only-ipad     Only generate iPad icons
+    
+    
 
 
 ##License

@@ -1,0 +1,28 @@
+{
+  "name": "iconerator",
+  "keywords": "icons, app icons, app icon generator",
+  "description": "Automatically generate all app market icons from a single input image (iOS + Android)",
+  "version": "0.1.0",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/alexanderscott/iconerator.git"
+  },
+  "author": "Alex Ehrnschwender <alex@crunchdevelopment.com> (http://alexehrnschwender.com)",
+  "dependencies": {
+    "commander": "~2.0.0",
+    "gm": "~1.13.3"
+  },
+  "engines": {
+    "node": ">= 0.6.0"
+  },
+  "main": "./lib/iconerator",
+  "directories": {
+    "lib": "./lib"
+  },
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "https://github.com/alexanderscott/iconerator/raw/master/LICENSE"
+    }
+  ]
+}

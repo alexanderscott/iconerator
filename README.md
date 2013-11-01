@@ -3,7 +3,6 @@
 Automatically generate all app market icons from a single image (iOS + Android).
 
 ##Installation
------------
 First download and install GraphicsMagick or ImageMagick. In Mac OS X, you can simply use Homebrew and do:
 
 `brew install imagemagick`
@@ -16,7 +15,6 @@ Then install iconerator via npm with:
 
 
 ##Usage
-------------
 `$ iconerator.js [options] <img file ...> <output path ...>`
 
 
@@ -34,7 +32,6 @@ Then install iconerator via npm with:
 
 
 ##License
-------------
 
 (The MIT License)
 

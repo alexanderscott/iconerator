@@ -1,5 +1,4 @@
 #Iconerator
------------
 Automatically generate all app market icons from a single image (iOS + Android).
 
 ##Installation

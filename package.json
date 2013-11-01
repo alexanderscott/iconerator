@@ -16,7 +16,10 @@
   "engines": {
     "node": ">= 0.6.0"
   },
-  "main": "./lib/iconerator",
+  "main": "index",
+  "bin" : {
+      "iconerator" : "./bin/iconerator"
+  },
   "directories": {
     "lib": "./lib"
   },

@@ -10,11 +10,11 @@ First download and install GraphicsMagick or ImageMagick. In Mac OS X, you can s
 
 Then install iconerator via npm with:
 
-`$ sudo npm install -g iconerator`
+`$ npm install -g iconerator`
 
 
 ##Usage
-`$ iconerator.js [options] <img file ...> <output path ...>`
+`$ iconerator [options] <img file ...> <optional output path ...>`
 
 
   

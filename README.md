@@ -1,6 +1,8 @@
 #Iconerator
 Automatically generate all app market icons from a single image (iOS + Android).
 
+[![Build Status](https://secure.travis-ci.org/alexanderscott/iconerator.png)](http://travis-ci.org/alexanderscott/iconerator)
+
 ##Installation
 First download and install GraphicsMagick or ImageMagick. In Mac OS X, you can simply use Homebrew and do:
 

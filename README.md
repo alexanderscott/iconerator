@@ -28,7 +28,27 @@ Then install iconerator via npm with:
     --only-ipad     Only generate iPad icons
     
     
+##Configuration
+A list of the icon sizes and resolutions to be generated is externalized inside of `./lib/config.js`.  This can be safely updated to include custom icon sizes.
 
+The full list of default icon sizes (in pixels) is:
+
+*  29x29 (iOS)
+*  36x36 (Android)
+*  40x40 (iOS)
+*  48x48 (Android)
+*  58x58 (iOS)
+*  60x60 (iOS)
+*  72x72 (Android)
+*  76x76 (iOS)
+*  80x80 (iOS)
+*  96x96 (Android)
+*  120x120 (iOS)
+*  144x144 (Android)
+*  152x152 (iOS)
+*  512x512 (iOS & Android)
+*  1024x1024 (iOS)
+    
 
 ##License
 

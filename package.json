@@ -20,9 +20,6 @@
   "bin" : {
       "iconerator" : "./bin/iconerator"
   },
-  "directories": {
-    "lib": "./lib"
-  },
   "licenses": [
     {
       "type": "MIT",

@@ -12,11 +12,11 @@ First download and install GraphicsMagick or ImageMagick. In Mac OS X, you can s
 
 Then install iconerator via npm with:
 
-`$ npm install -g iconerator`
+`npm install -g iconerator`
 
 
 ##Usage
-`$ iconerator [options] <img file ...> <optional output path ...>`
+`iconerator [options] <img file ...> <optional output path ...>`
 
 
   
@@ -35,28 +35,29 @@ A list of the icon sizes and resolutions to be generated is externalized inside 
 
 The full list of default icon sizes (in pixels) is:
 
-*  29x29 (iOS)
-*  36x36 (Android)
-*  40x40 (iOS)
-*  48x48 (Android)
-*  58x58 (iOS)
-*  60x60 (iOS)
-*  72x72 (Android)
-*  76x76 (iOS)
-*  80x80 (iOS)
-*  96x96 (Android)
-*  120x120 (iOS)
-*  144x144 (Android)
-*  152x152 (iOS)
-*  512x512 (iOS & Android)
-*  1024x1024 (iOS)
+*  29x29 (iOS - Settings icon - iPad 2 & iPad mini standard res)
+*  36x36 (Android - LDPI)
+*  40x40 (iOS - Spotlight search results - iPad 2 & iPad mini standard res)
+*  48x48 (Android - MDPI)
+*  58x58 (iOS - Settings icon - iPhone, iPod, iPad & iPad mini high res)
+*  60x60 (iOS - Tab bar icon)
+*  72x72 (Android - HDPI)
+*  76x76 (iOS - App icon - iPad 2 & iPad mini standard res)
+*  80x80 (iOS - Spotlight search results - iPhone, iPod, iPad & iPad mini high res)
+*  96x96 (Android - XHDPI)
+*  120x120 (iOS - App icon - iPhone, iPod high res)
+*  144x144 (Android - XXHDPI)
+*  152x152 (iOS - App icon - iPad & iPad mini high res)
+*  192x192 (Android - XXXHDPI)
+*  512x512 (iOS & Android - Newsstand cover & Google Play icon)
+*  1024x1024 (iOS - Newsstand cover icon)
     
 
 ##License
 
 (The MIT License)
 
-Copyright (c) 2013 Alex Ehrnschwender (http://alexehrnschwender.com/)
+Copyright (c) 2013-2014 Alex Ehrnschwender (http://alexehrnschwender.com/)
 
 Permission is hereby granted, free of charge, to any person obtaining
 a copy of this software and associated documentation files (the

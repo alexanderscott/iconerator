@@ -6,8 +6,7 @@ Automatically generate all app market icons from a single image (iOS + Android).
 ##Installation
 First download and install GraphicsMagick or ImageMagick. In Mac OS X, you can simply use Homebrew and do:
 
-`brew install imagemagick`
-`brew install graphicsmagick`
+`brew install imagemagick graphicsmagick`
 
 
 Then install iconerator via npm with:
@@ -55,7 +54,7 @@ The full list of default icon sizes (in pixels) is:
 
 ##License
 
-(The MIT License)
+MIT License
 
 Copyright (c) 2013-2014 Alex Ehrnschwender (http://alexehrnschwender.com/)
 

@@ -1,17 +1,21 @@
-var child_process = require('child_process');
-    //iconerator = require('../lib/iconerator'); 
+"use strict";
 
+var assert = require('assert'),
+    iconerator = require('../lib/iconerator'),
+    testImg = "./sliceisright.png",
+    timeout = 3000;
 
-var iconerator = child_process.spawn('node', [__dirname+'../lib/iconerator.js', __dirname+'/sliceisright.png', __dirname]);
-
-iconerator.stdout.on('data', function(stdout){
-    console.log("stdout: ", stdout);
-});
-
-iconerator.stderr.on('data', function(stderr){
-    console.log("stderr: ", stderr);
-});
-
-iconerator.on('close', function(code){
-    console.log("iconerator exited with code "+code);
+describe('iconerator', function(){
+    beforeEach(function(cb){
+        cb();
+    });
+    afterEach(function(cb){
+        cb();
+    });
+    before(function(cb){
+        cb();
+    });
+    after(function(cb){
+        cb();
+    });
 });

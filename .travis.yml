@@ -10,4 +10,3 @@ install:
 branches:
   only:
     - master
-

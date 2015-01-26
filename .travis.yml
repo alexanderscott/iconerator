@@ -7,3 +7,6 @@ node_js:
 env: NODE_ENV=development
 install:
   - sudo apt-get install imagemagick graphicsmagick
+branches:
+  only:
+    - master

@@ -50,6 +50,13 @@ describe('iconerator', function(){
         cb();
     });
 
+    it('can create Web output directories', function(cb){
+        this.timeout(timeout);
+        iconerator.createWebIconFolders(outputPath);
+        assert(fs.statSync(outputPath + "/web").isDirectory());
+        cb();
+    });
+
     it('can create iOS output directories', function(cb){
         this.timeout(timeout);
         iconerator.createIOSIconFolders(outputPath);
@@ -68,6 +75,19 @@ describe('iconerator', function(){
             cb();
         }); 
     });
+
+    it('can generate Web images', function(cb){
+        this.timeout(timeout);
+        iconerator.generateIcons(testImg, outputPath, "web", null, function(err){
+            assert.ifError(err);
+            var iconMeta = _.where(config.icons, { platform: 'Web' });
+            for(var i = 0; i < iconMeta.length; i++){
+                assert(fs.statSync(outputPath + "/web/"+iconMeta[i].file_name).isFile());
+            }
+            cb();
+        }); 
+    });
+
     it('can generate Android images', function(cb){
         this.timeout(timeout);
         iconerator.generateIcons(testImg, outputPath, "android", null, function(err){

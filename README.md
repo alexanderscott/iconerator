@@ -1,5 +1,5 @@
 #Iconerator [![Build Status](https://secure.travis-ci.org/alexanderscott/iconerator.png)](http://travis-ci.org/alexanderscott/iconerator)
-Automatically generate all app market icons from a single image (iOS + Android).
+Automatically generate all app market icons from a single image (iOS + Android + Web).
 
 [![NPM](https://nodei.co/npm/iconerator.png?downloads=true)](https://nodei.co/npm/iconerator/)
 
@@ -28,6 +28,7 @@ Then install iconerator via npm with:
     --only-android  Only generate Android icons
     --only-iphone   Only generate iPhone icons
     --only-ipad     Only generate iPad icons
+    --only-web      Only generate Web icons
     
     
 ##Configuration
@@ -35,25 +36,36 @@ A list of the icon sizes and resolutions to be generated is externalized inside 
 
 The full list of default icon sizes (in pixels) is:
 
+### iOS
 *  29x29 (iOS - Settings icon - iPad 2 & iPad mini standard res)
-*  36x36 (Android - LDPI)
 *  40x40 (iOS - Spotlight search results - iPad 2 & iPad mini standard res)
-*  48x48 (Android - MDPI)
 *  58x58 (iOS - Settings icon - iPhone, iPod, iPad & iPad mini high res)
 *  60x60 (iOS - Tab bar icon)
-*  72x72 (Android - HDPI)
 *  76x76 (iOS - App icon - iPad 2 & iPad mini standard res)
 *  80x80 (iOS - Spotlight search results - iPhone, iPod, iPad & iPad mini high res)
 *  87x87 (iOS - Settings icon - iPhone 6 Plus)
-*  96x96 (Android - XHDPI)
 *  120x120 (iOS - App icon - iPhone, iPod high res)
-*  144x144 (Android - XXHDPI)
 *  152x152 (iOS - App icon - iPad & iPad mini high res)
 *  180x180 (iOS - App icon - iPhone 6 Plus)
+*  512x512 (iOS - Newsstand cover)
+*  1024x1024 (iOS - Newsstand cover)
+
+### Android
+*  36x36 (Android - LDPI)
+*  48x48 (Android - MDPI)
+*  72x72 (Android - HDPI)
+*  96x96 (Android - XHDPI)
+*  144x144 (Android - XXHDPI)
 *  192x192 (Android - XXXHDPI)
-*  512x512 (iOS & Android - Newsstand cover & Google Play icon)
-*  1024x1024 (iOS - Newsstand cover icon)
+*  512x512 (Android - Google Play icon)
     
+
+### Web
+* 16x16 (Web - favicon)
+* 32x32 (Web - favicon)
+* 48x48 (Web - favicon)
+* 64x64 (Web - favicon)
+
 
 ##License
 

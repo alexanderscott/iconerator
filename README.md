@@ -46,6 +46,7 @@ The full list of default icon sizes (in pixels) is:
 *  87x87 (iOS - Settings icon - iPhone 6 Plus)
 *  120x120 (iOS - App icon - iPhone, iPod high res)
 *  152x152 (iOS - App icon - iPad & iPad mini high res)
+*  167x167 (iOS - iPad Pro)
 *  180x180 (iOS - App icon - iPhone 6 Plus)
 *  512x512 (iOS - Newsstand cover)
 *  1024x1024 (iOS - Newsstand cover)

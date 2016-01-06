@@ -5,9 +5,8 @@ node_js:
   - "0.11"
 env: NODE_ENV=development
 before_install:
-  - sudo add-apt-repository ppa:dhor/myway
-  - sudo apt-get install imagemagick
-  - sudo apt-get install graphicsmagick
+  - sudo add-apt-repository -y ppa:dhor/myway
+  - sudo apt-get install -y imagemagick graphicsmagick
 branches:
   only:
     - master

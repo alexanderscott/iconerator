@@ -1,10 +1,12 @@
-#Iconerator [![Build Status](https://secure.travis-ci.org/alexanderscott/iconerator.png)](http://travis-ci.org/alexanderscott/iconerator)
+iconerator [![Build Status](https://secure.travis-ci.org/alexanderscott/iconerator.png)](http://travis-ci.org/alexanderscott/iconerator)
+=========
+
 Automatically generate all app market icons from a single image (iOS + Android + Web).
 
 [![NPM](https://nodei.co/npm/iconerator.png?downloads=true)](https://nodei.co/npm/iconerator/)
 
 
-##Installation
+## Installation
 First download and install GraphicsMagick or ImageMagick. In Mac OS X, you can simply use Homebrew and do:
 
 `brew install imagemagick graphicsmagick`
@@ -15,12 +17,12 @@ Then install iconerator via npm with:
 `npm install -g iconerator`
 
 
-##Usage
+## Usage
 `iconerator [options] <img file ...> <optional output path ...>`
 
 
   
-####Options:
+#### Options:
 
     -h, --help      output usage information
     -V, --version   output the version number
@@ -31,7 +33,7 @@ Then install iconerator via npm with:
     --only-web      Only generate Web icons
     
     
-##Configuration
+## Configuration
 A list of the icon sizes and resolutions to be generated is externalized inside of `./lib/config.js`.  This can be safely updated to include custom icon sizes.
 
 The full list of default icon sizes (in pixels) is:
@@ -68,11 +70,11 @@ The full list of default icon sizes (in pixels) is:
 * 64x64 (Web - favicon)
 
 
-##License
+## License
 
 MIT License
 
-Copyright (c) 2013-2014 Alex Ehrnschwender (http://alexehrnschwender.com/)
+Copyright (c) 2013-2017 Alex Ehrnschwender (http://alexehrnschwender.com/)
 
 Permission is hereby granted, free of charge, to any person obtaining
 a copy of this software and associated documentation files (the

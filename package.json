@@ -9,7 +9,7 @@
   ],
   "private": false,
   "description": "Generate all app market icons from a single input image (iOS + Android + Web)",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "repository": {
     "type": "git",
     "url": "https://github.com/alexanderscott/iconerator.git"

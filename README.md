@@ -1,5 +1,7 @@
-iconerator [![Build Status](https://secure.travis-ci.org/alexanderscott/iconerator.png)](http://travis-ci.org/alexanderscott/iconerator)
+iconerator 
 =========
+[![NPM version](https://badge.fury.io/js/iconerator.svg)](http://badge.fury.io/js/iconerator)
+[![Build Status](https://secure.travis-ci.org/alexanderscott/iconerator.png)](http://travis-ci.org/alexanderscott/iconerator)
 
 Automatically generate all app market icons from a single image (iOS + Android + Web).
 

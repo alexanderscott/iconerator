@@ -16,7 +16,7 @@
   },
   "author": "Alex Ehrnschwender <alexanderscott46@gmail.com> (https://ehrns.com)",
   "dependencies": {
-    "async": "0.2.5",
+    "async": "2.6.4",
     "commander": "~2.0.0",
     "gm": "^1.23.1",
     "imagemagick": "~0.1.3",

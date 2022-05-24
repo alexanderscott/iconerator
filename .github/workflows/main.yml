@@ -1,14 +1,12 @@
 name: CI
-on:
-  - push
-  - pull_request
+
+on: [push]
 
 jobs:
   build:
     runs-on: ubuntu-latest
-    steps:
-    - uses: actions/checkout@v3
 
+    steps:
     - name: Install dependencies
       run: |
         sudo apt-get update
@@ -21,6 +19,6 @@ jobs:
       with:
         node-version: '14.x'
 
-    - run: npm install
+    - run: npm install --dev
 
     - run: npm test

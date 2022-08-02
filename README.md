@@ -1,7 +1,7 @@
-iconerator 
+iconerator
 =========
 [![NPM version](https://badge.fury.io/js/iconerator.svg)](http://badge.fury.io/js/iconerator)
-[![Build Status](https://secure.travis-ci.org/alexanderscott/iconerator.png)](http://travis-ci.org/alexanderscott/iconerator)
+[![CI](https://github.com/alexanderscott/iconerator/actions/workflows/main.yml/badge.svg)](https://github.com/alexanderscott/iconerator/actions/workflows/main.yml)
 
 Automatically generate all app market icons from a single image (iOS + Android + Web).
 
@@ -23,7 +23,10 @@ Then install iconerator via npm with:
 `iconerator [options] <img file ...> <optional output path ...>`
 
 
-  
+## Run Tests
+`npm test`
+
+
 #### Options:
 
     -h, --help      output usage information
@@ -33,8 +36,8 @@ Then install iconerator via npm with:
     --only-iphone   Only generate iPhone icons
     --only-ipad     Only generate iPad icons
     --only-web      Only generate Web icons
-    
-    
+
+
 ## Configuration
 A list of the icon sizes and resolutions to be generated is externalized inside of `./lib/config.js`.  This can be safely updated to include custom icon sizes.
 
@@ -63,7 +66,7 @@ The full list of default icon sizes (in pixels) is:
 *  144x144 (Android - XXHDPI)
 *  192x192 (Android - XXXHDPI)
 *  512x512 (Android - Google Play icon)
-    
+
 
 ### Web
 * 16x16 (Web - favicon)
@@ -76,7 +79,7 @@ The full list of default icon sizes (in pixels) is:
 
 MIT License
 
-Copyright (c) 2013-2021 Alex Ehrnschwender (http://alexehrnschwender.com/)
+Copyright (c) 2013-2022 Alex Ehrnschwender (https://ehrns.com)
 
 Permission is hereby granted, free of charge, to any person obtaining
 a copy of this software and associated documentation files (the

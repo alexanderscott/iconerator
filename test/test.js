@@ -65,14 +65,19 @@ describe('iconerator', function(){
             for(var i = 0; i < androidIconMeta.length; i++){
                 var meta = androidIconMeta[i];
                 var outputFile;
-                if(meta.type === 'Launcher Icon') 
+                if(meta.type !== 'Launcher Icon') {
+                    outputFile = path.join(outputPath, config.output.androidDir, meta.file_name);
+                    assert(fs.statSync(outputFile).isFile());
+                } else {
                     outputFile = path.join(outputPath, config.output.androidDir, 'res', 'drawable-' + meta.resolution, meta.file_name);
-                else outputFile = path.join(outputPath, config.output.androidDir, meta.file_name);
-                assert(fs.statSync(outputFile).isFile());
+                    assert(fs.statSync(outputFile).isFile());
+                    outputFile = path.join(outputPath, config.output.androidDir, 'res', 'mipmap-' + meta.resolution, meta.file_name);
+                    assert(fs.statSync(outputFile).isFile());
+                }
             }
 
             cb();
-        }); 
+        });
     });
 
     it('can generate only iOS images and proper output directories', function(cb){
@@ -89,7 +94,7 @@ describe('iconerator', function(){
                 assert(fs.statSync(path.join(outputPath, config.output.iosDir, iconMeta[i].file_name)).isFile());
             }
             cb();
-        }); 
+        });
     });
 
     it('can generate only Web images and proper output directories', function(cb){
@@ -106,7 +111,7 @@ describe('iconerator', function(){
                 assert(fs.statSync(path.join(outputPath, config.output.webDir, iconMeta[i].file_name)).isFile());
             }
             cb();
-        }); 
+        });
     });
 
     it('can generate only Android images and proper output directories', function(cb){
@@ -117,7 +122,23 @@ describe('iconerator', function(){
             assert(!fs.existsSync(path.join(outputPath, config.output.webDir)));
             assert(!fs.existsSync(path.join(outputPath, config.output.iosDir)));
 
-            var androidSubDirs = ['', '/res', '/res/drawable-ldpi', '/res/drawable-mdpi', '/res/drawable-hdpi', '/res/drawable-xhdpi', '/res/drawable-xxhdpi', '/res/drawable-xxxhdpi'];
+            var androidSubDirs = [
+                '',
+                '/res',
+                '/res/drawable-ldpi',
+                '/res/drawable-mdpi',
+                '/res/drawable-hdpi',
+                '/res/drawable-xhdpi',
+                '/res/drawable-xxhdpi',
+                '/res/drawable-xxxhdpi',
+                '/res/mipmap-ldpi',
+                '/res/mipmap-mdpi',
+                '/res/mipmap-hdpi',
+                '/res/mipmap-xhdpi',
+                '/res/mipmap-xxhdpi',
+                '/res/mipmap-xxxhdpi'
+            ];
+
             for(var i = 0; i < androidSubDirs.length; i++){
                 assert(fs.statSync(path.join(outputPath, config.output.androidDir, androidSubDirs[i])).isDirectory());
             }
@@ -126,14 +147,19 @@ describe('iconerator', function(){
             for(var i = 0; i < iconMeta.length; i++){
                 var meta = iconMeta[i];
                 var outputFile;
-                if(meta.type === 'Launcher Icon') 
+                if(meta.type !== 'Launcher Icon') {
+                    outputFile = path.join(outputPath, config.output.androidDir, meta.file_name);
+                    assert(fs.statSync(outputFile).isFile());
+                } else {
                     outputFile = path.join(outputPath, config.output.androidDir, 'res', 'drawable-' + meta.resolution, meta.file_name);
-                else outputFile = path.join(outputPath, config.output.androidDir, meta.file_name);
-                assert(fs.statSync(outputFile).isFile());
+                    assert(fs.statSync(outputFile).isFile());
+                    outputFile = path.join(outputPath, config.output.androidDir, 'res', 'mipmap-' + meta.resolution, meta.file_name);
+                    assert(fs.statSync(outputFile).isFile());
+                }
             }
 
             cb();
-        }); 
+        });
     });
 
 });

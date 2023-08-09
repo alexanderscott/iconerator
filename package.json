@@ -17,11 +17,12 @@
   "author": "Alex Ehrnschwender <alexanderscott46@gmail.com> (https://ehrns.com)",
   "dependencies": {
     "async": "2.6.4",
+    "command-exists": "^1.2.9",
     "commander": "~2.0.0",
     "gm": "^1.23.1",
     "imagemagick": "~0.1.3",
-    "underscore": "~1.12.1",
-    "minimist": ">=1.2.6"
+    "minimist": ">=1.2.6",
+    "underscore": "~1.12.1"
   },
   "devDependencies": {
     "mocha": "^10.2.0"
